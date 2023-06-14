@@ -1,9 +1,9 @@
 customization:
   distribution_code_name: Weasel
-  distribution_version: 0.15.0.0
+  distribution_version: 0.15.3.0
   generator: "Weasel::UIStyleSettings"
-  modified_time: "Wed Jun 14 17:04:50 2023"
+  modified_time: "Mon Jun  5 09:13:58 2023"
   rime_version: 1.8.5
 patch:
   __include: "hot_keys:/patch"
-  "style/color_scheme": espagna
+  "style/color_scheme": 98wb-pink

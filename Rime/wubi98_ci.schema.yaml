@@ -12,21 +12,21 @@ schema:
 switches:
   - name: ascii_mode
     reset: 0
-    states: [ 中,英 ]    
+    states: [ 中,英 ]
   - name: zh_trad
-    reset: 0
+    reset: 1
     states: [ 简,繁 ]
   - name: new_spelling
-    reset: 1
+    reset: 0
     states: [ 隐,显 ]
   - name: rvl_zhuyin
     reset: 1
     states: [ 形,拼 ]
   - name: GB2312
-    reset: 0
+    reset: 1
     states: [ 扩,常 ]
   - name: new_hide_pinyin
-    reset: 1
+    reset: 0
     states: [ 音,哑 ]
   - name: single_char
     reset: 0

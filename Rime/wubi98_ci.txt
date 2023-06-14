@@ -2,14 +2,4 @@
 #@/db_name	wubi98_ci
 #@/db_type	tabledb
 #@/rime_version	1.8.5
-#@/tick	82
-磊	ddd	1
-大	dddd	4
-地	f	2
-寺	ff	4
-圭	fff	8
-土	ffff	46
-日	jjjj	4
-中	k	1
-口	kkkk	5
-火	oooo	7
+#@/tick	0

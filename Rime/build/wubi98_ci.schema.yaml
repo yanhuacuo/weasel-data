@@ -9,8 +9,8 @@ __build_info:
     punctuation.custom: 1679033566
     symbols: 1606040274
     symbols.custom: 1679033566
-    wubi98_ci.custom: 1686733266
-    wubi98_ci.schema: 1683861214
+    wubi98_ci.custom: 1686732834
+    wubi98_ci.schema: 1686736761
 ci_reverse_lookup:
   dictionary: wubi98_ci.extended
   tags:
@@ -477,28 +477,28 @@ style:
   inline_preedit: true
   mark_text: ""
   preedit_type: composition
-  vertical_auto_reverse: true
+  vertical_auto_reverse: false
   vertical_text: false
-  vertical_text_left_to_right: true
+  vertical_text_left_to_right: false
   vertical_text_with_wrap: false
 switches:
   - name: ascii_mode
     reset: 0
     states: ["中", "英"]
   - name: zh_trad
-    reset: 0
+    reset: 1
     states: ["简", "繁"]
   - name: new_spelling
-    reset: 1
+    reset: 0
     states: ["隐", "显"]
   - name: rvl_zhuyin
     reset: 1
     states: ["形", "拼"]
   - name: GB2312
-    reset: 0
+    reset: 1
     states: ["扩", "常"]
   - name: new_hide_pinyin
-    reset: 1
+    reset: 0
     states: ["音", "哑"]
   - name: single_char
     reset: 0
