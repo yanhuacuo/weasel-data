@@ -5,3 +5,7 @@ patch:
   "style/inline_preedit": true
   "style/preedit_type": composition
   "style/mark_text": ""
+  "style/vertical_auto_reverse": true
+  "style/vertical_text": false
+  "style/vertical_text_left_to_right": true
+  "style/vertical_text_with_wrap": false

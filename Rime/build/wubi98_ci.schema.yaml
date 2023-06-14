@@ -1,27 +1,32 @@
 __build_info:
   rime_version: 1.8.5
   timestamps:
-    default: 1679832953
-    default.custom: 1679832971
+    default: 1679832952
+    default.custom: 1685927446
     key_bindings: 1606040274
     key_bindings.custom: 1679033566
     punctuation: 1606040274
     punctuation.custom: 1679033566
-    py.custom: 1679827006
-    py.schema: 1634116528
     symbols: 1606040274
     symbols.custom: 1679033566
+    wubi98_ci.custom: 1686733266
+    wubi98_ci.schema: 1683861214
 ci_reverse_lookup:
   dictionary: wubi98_ci.extended
-  enable_completion: true
-  tips: "〔五笔2〕"
+  tags:
+    - rvlk2
+  tips: "〔五笔滤镜〕"
 engine:
   filters:
     - simplifier
+    - "lua_filter@single_char"
     - "reverse_lookup_filter@ci_reverse_lookup"
+    - "lua_filter@new_spelling@spelling"
     - uniquifier
   processors:
     - ascii_composer
+    - "lua_processor@submit_text_processor"
+    - "lua_processor@switch_processor"
     - recognizer
     - key_binder
     - speller
@@ -32,48 +37,80 @@ engine:
   segmentors:
     - ascii_segmentor
     - matcher
+    - "affix_segmentor@mkst"
+    - "affix_segmentor@rvl_zhuyin"
+    - "affix_segmentor@rvlk1"
     - abc_segmentor
     - punct_segmentor
     - fallback_segmentor
   translators:
     - punct_translator
-    - script_translator
     - reverse_lookup_translator
+    - "table_translator@rvlk1"
+    - table_translator
+    - "table_translator@fixed"
+    - "table_translator@mkst"
+    - "table_translator@rvl_zhuyin"
+    - "history_translator@history"
+    - "lua_translator@helper"
+    - "lua_translator@time_date"
+fixed:
+  db_class: tabledb
+  dictionary: wubi98_ci.extended
+  disable_user_dict_for_patterns:
+    - "^z.*$"
+  enable_charset_filter: false
+  enable_completion: false
+  enable_encoder: true
+  enable_sentence: false
+  enable_user_dict: true
+  encode_commit_history: false
+  initial_quality: 1000
+  max_phrase_length: 4
+history:
+  initial_quality: 1
+  input: z
+  size: 1
 key_binder:
   bindings:
-    - {accept: "Control+p", send: Up, when: composing}
-    - {accept: "Control+n", send: Down, when: composing}
-    - {accept: "Control+b", send: Left, when: composing}
-    - {accept: "Control+f", send: Right, when: composing}
-    - {accept: "Control+a", send: Home, when: composing}
-    - {accept: "Control+e", send: End, when: composing}
-    - {accept: "Control+d", send: Delete, when: composing}
-    - {accept: "Control+k", send: "Shift+Delete", when: composing}
-    - {accept: "Control+h", send: BackSpace, when: composing}
-    - {accept: "Control+g", send: Escape, when: composing}
-    - {accept: "Control+bracketleft", send: Escape, when: composing}
-    - {accept: "Alt+v", send: Page_Up, when: composing}
-    - {accept: "Control+v", send: Page_Down, when: composing}
-    - {accept: ISO_Left_Tab, send: "Shift+Left", when: composing}
-    - {accept: "Shift+Tab", send: "Shift+Left", when: composing}
-    - {accept: Tab, send: "Shift+Right", when: composing}
+    - {accept: Left, send: Up, when: has_menu}
+    - {accept: Right, send: Down, when: has_menu}
     - {accept: minus, send: Page_Up, when: has_menu}
     - {accept: equal, send: Page_Down, when: has_menu}
-    - {accept: comma, send: Page_Up, when: paging}
-    - {accept: period, send: Page_Down, when: has_menu}
-    - {accept: "Control+Shift+1", select: .next, when: always}
-    - {accept: "Control+Shift+2", toggle: ascii_mode, when: always}
-    - {accept: "Control+Shift+3", toggle: full_shape, when: always}
-    - {accept: "Control+Shift+4", toggle: simplification, when: always}
-    - {accept: "Control+Shift+5", toggle: extended_charset, when: always}
-    - {accept: "Control+Shift+exclam", select: .next, when: always}
-    - {accept: "Control+Shift+at", toggle: ascii_mode, when: always}
-    - {accept: "Control+Shift+numbersign", toggle: full_shape, when: always}
-    - {accept: "Control+Shift+dollar", toggle: simplification, when: always}
-    - {accept: "Control+Shift+percent", toggle: extended_charset, when: always}
-  import_preset: default
+    - {accept: space, send: Escape, when: composing}
+    - {accept: space, send: space, when: has_menu}
+    - {accept: "Control+Shift+4", toggle: zh_trad, when: always}
+    - {accept: "Control+Shift+dollar", toggle: zh_trad, when: always}
+    - {accept: "Control+Shift+F", toggle: zh_trad, when: always}
+    - {accept: "Control+Shift+H", toggle: new_spelling, when: always}
+    - {accept: "Control+Shift+J", toggle: new_hide_pinyin, when: always}
+    - {accept: "Control+Shift+K", toggle: single_char, when: always}
+    - {accept: "Control+Shift+U", toggle: GB2312, when: always}
+    - {accept: Return, send: Escape, when: composing}
+    - {accept: Return, send: Escape, when: has_menu}
+    - {accept: semicolon, send: 2, when: has_menu}
+    - {accept: apostrophe, send: 3, when: has_menu}
+lua_reverse_db:
+  code: wb_spelling
+  spelling: wb_spelling
 menu:
   page_size: 9
+mkst:
+  db_class: tabledb
+  dictionary: wubi98_ci.extended
+  disable_user_dict_for_patterns:
+    - "^z.*$"
+  enable_charset_filter: false
+  enable_completion: false
+  enable_encoder: false
+  enable_sentence: true
+  enable_user_dict: false
+  encode_commit_history: false
+  initial_quality: 10
+  max_phrase_length: 4
+  prefix: "`"
+  tag: mkst
+  tips: "〔精准造词〕"
 punctuator:
   full_shape:
     " ": {commit: "　"}
@@ -349,44 +386,139 @@ recognizer:
   import_preset: default
   patterns:
     email: "^[A-Za-z][-_.0-9A-Za-z]*@.*$"
+    helper: "^help$"
+    mkst: "^[a-y]*`[a-y`]*$"
     punct: "^/([0-9]0?|[A-Za-z]+)$"
-    reverse_lookup: "^z[a-z]*'?$"
+    rvlk1: "^z[a-z]*$"
+    rvlk2: "^z[a-z]*$"
     uppercase: "[A-Z][-_+.'0-9A-Za-z]*$"
     url: "^(www[.]|https?:|ftp[.:]|mailto:|file:).*$|^[a-z]+[.].+$"
-schema:
-  author:
-    - "佚名"
-  dependencies:
-    - wubi98_ci
-  description: |
-    源自 Android 拼音
-
-  name: "拼音"
-  schema_id: py
-  version: 1.0
-speller:
-  algebra:
-    - "abbrev/^([a-z]).+$/$1/"
-    - "abbrev/^([zcs]h).+$/$1/"
-    - "derive/^([nl])ue$/$1ve/"
-    - "derive/^([jqxy])u/$1v/"
-    - "derive/un$/uen/"
-    - "derive/ui$/uei/"
-    - "derive/iu$/iou/"
-    - "derive/([aeiou])ng$/$1gn/"
-    - "derive/([dtngkhrzcs])o(u|ng)$/$1o/"
-    - "derive/ong$/on/"
-    - "derive/ao$/oa/"
-    - "derive/([iu])a(o|ng?)$/a$1$2/"
-  alphabet: zyxwvutsrqponmlkjihgfedcba
-  delimiter: " '"
-switches:
-  - name: ascii_mode
-    reset: 0
-    states: ["中", "英"]
-translator:
+    zhuyin: "~[a-y]*?$"
+reverse_lookup:
+  db_class: tabledb
   dictionary: py
+  disable_user_dict_for_patterns:
+    - "^z.*$"
+  enable_charset_filter: false
+  enable_completion: false
+  enable_encoder: false
+  enable_sentence: false
+  enable_user_dict: false
+  encode_commit_history: false
+  initial_quality: 100000
+  max_phrase_length: 4
   preedit_format:
     - "xform/([nl])v/$1ü/"
     - "xform/([nl])ue/$1üe/"
     - "xform/([jqxy])v/$1u/"
+  tag: rvlk2
+  tips: "〔拼音反查〕"
+rvl_zhuyin:
+  db_class: tabledb
+  dictionary: wubi98_ci.extended
+  disable_user_dict_for_patterns:
+    - "^z.*$"
+  enable_charset_filter: false
+  enable_completion: false
+  enable_encoder: false
+  enable_sentence: true
+  enable_user_dict: false
+  encode_commit_history: false
+  initial_quality: 10
+  max_phrase_length: 4
+  prefix: "~"
+  tag: zhuyin
+  tips: "〔以形查音〕"
+rvlk1:
+  db_class: tabledb
+  dictionary: py
+  disable_user_dict_for_patterns:
+    - "^z.*$"
+  enable_charset_filter: false
+  enable_completion: false
+  enable_encoder: false
+  enable_sentence: false
+  enable_user_dict: false
+  encode_commit_history: false
+  extra_tags:
+    - rvlk2
+  initial_quality: 100000
+  max_phrase_length: 4
+  preedit_format:
+    - "xform/([nl])v/$1ü/"
+    - "xform/([nl])ue/$1üe/"
+    - "xform/([jqxy])v/$1u/"
+  prefix: z
+  tag: rvlk1
+  tips: "〔拼音反查〕"
+schema:
+  author:
+    - "發明人 王永民"
+  description: |
+    五笔98版
+    碼表源自 yanhuacuo
+    敲 z 鍵進入拼音反查
+
+  name: "含词"
+  schema_id: wubi98_ci
+  version: 6.0
+simplifier:
+  opencc_config: s2t.json
+  option_name: zh_trad
+speller:
+  auto_clear: max_length
+  auto_select: true
+  delimiter: "`"
+  max_code_length: 4
+style:
+  font_face: "98WB-0"
+  fullscreen: false
+  horizontal: false
+  inline_preedit: true
+  mark_text: ""
+  preedit_type: composition
+  vertical_auto_reverse: true
+  vertical_text: false
+  vertical_text_left_to_right: true
+  vertical_text_with_wrap: false
+switches:
+  - name: ascii_mode
+    reset: 0
+    states: ["中", "英"]
+  - name: zh_trad
+    reset: 0
+    states: ["简", "繁"]
+  - name: new_spelling
+    reset: 1
+    states: ["隐", "显"]
+  - name: rvl_zhuyin
+    reset: 1
+    states: ["形", "拼"]
+  - name: GB2312
+    reset: 0
+    states: ["扩", "常"]
+  - name: new_hide_pinyin
+    reset: 1
+    states: ["音", "哑"]
+  - name: single_char
+    reset: 0
+    states: ["词", "单"]
+  - name: ascii_punct
+    reset: 0
+    states: ["。，", "．，"]
+  - name: full_shape
+    reset: 0
+    states: ["半", "全"]
+translator:
+  db_class: tabledb
+  dictionary: wubi98_ci.extended
+  disable_user_dict_for_patterns:
+    - "^z.*$"
+  enable_charset_filter: false
+  enable_completion: false
+  enable_encoder: false
+  enable_sentence: false
+  enable_user_dict: false
+  encode_commit_history: false
+  initial_quality: 100000
+  max_phrase_length: 4

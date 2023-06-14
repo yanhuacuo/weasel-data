@@ -1,8 +1,9 @@
 patch:
-  "style/font_face": "98WB-0"
-  "style/horizontal": true
+  "style/font_face": "98WB-V,98WB-U"
+  "style/comment_font_face": "98WB-3"
+  "style/horizontal": false
   "style/fullscreen": false
-  "style/inline_preedit": true
+  "style/inline_preedit": false
   "style/preedit_type": composition
   "style/mark_text": ""
   "style/vertical_auto_reverse": false

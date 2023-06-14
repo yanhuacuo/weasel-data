@@ -3,8 +3,8 @@ __build_info:
   timestamps:
     hot_keys: 1679834216
     hot_keys.custom: 1679826956
-    weasel: 1685927671
-    weasel.custom: 1685927638
+    weasel: 1686732876
+    weasel.custom: 1686733490
 app_options:
   QQ.exe:
     ascii_mode: true
@@ -1178,7 +1178,7 @@ preset_color_schemes:
 style:
   capture_by_click: false
   capture_type: none
-  color_scheme: summer
+  color_scheme: espagna
   comment_font_face: "98WB-0"
   comment_font_point: 14
   display_tray_icon: false
@@ -1186,7 +1186,7 @@ style:
   font_point: 14
   fullscreen: false
   horizontal: false
-  inline_preedit: false
+  inline_preedit: true
   label_font_face: "98WB-0"
   label_font_point: 14
   label_format: "%s."
@@ -1211,6 +1211,7 @@ style:
     spacing: 20
   mark_text: ""
   preedit_type: composition
+  vertical_auto_reverse: false
   vertical_text: false
   vertical_text_left_to_right: false
   vertical_text_with_wrap: false

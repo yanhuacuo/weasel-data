@@ -2,6 +2,5 @@
 #@/db_name	wubi98_dz
 #@/db_type	tabledb
 #@/rime_version	1.8.5
-#@/tick	126
-了	b	3
-物	cq	1
+#@/tick	2
+圭	fff	2
