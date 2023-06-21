@@ -12,7 +12,7 @@ schema:
 switches:
   - name: ascii_mode
     reset: 0
-    states: [ 中,英 ]    
+    states: [ 中,英 ]
   - name: zh_trad
     reset: 0
     states: [ 简,繁 ]

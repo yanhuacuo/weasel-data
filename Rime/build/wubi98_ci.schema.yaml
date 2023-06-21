@@ -9,8 +9,8 @@ __build_info:
     punctuation.custom: 1679033566
     symbols: 1606040274
     symbols.custom: 1679033566
-    wubi98_ci.custom: 1686732834
-    wubi98_ci.schema: 1683861214
+    wubi98_ci.custom: 1687324105
+    wubi98_ci.schema: 1687319881
 ci_reverse_lookup:
   dictionary: wubi98_ci.extended
   tags:
@@ -452,6 +452,7 @@ rvlk1:
   tag: rvlk1
   tips: "〔拼音反查〕"
 schema:
+  ascii_icon: "icons/en.ico"
   author:
     - "發明人 王永民"
   description: |
@@ -459,6 +460,7 @@ schema:
     碼表源自 yanhuacuo
     敲 z 鍵進入拼音反查
 
+  icon: "icons/wubi.ico"
   name: "含词"
   schema_id: wubi98_ci
   version: 6.0
@@ -471,15 +473,45 @@ speller:
   delimiter: "`"
   max_code_length: 4
 style:
+  antialias_mode: cleartype
+  ascii_tip_follow_cursor: true
+  color_scheme: songhe
+  comment_font_face: "98WB-0"
+  comment_font_point: 14
+  display_tray_icon: true
   font_face: "98WB-0"
+  font_point: 14
   fullscreen: false
-  horizontal: false
+  horizontal: true
   inline_preedit: true
+  label_font_face: "98WB-0"
+  label_font_point: 14
+  label_format: "%s."
+  layout:
+    align_type: center
+    border: 2
+    border_width: 3
+    candidate_spacing: 20
+    corner_radius: 14
+    hilite_padding: 5
+    hilite_spacing: 20
+    margin_x: 12
+    margin_y: 12
+    max_height: 2800
+    max_width: 2800
+    min_height: 0
+    min_width: 160
+    round_corner: 6
+    shadow_offset_x: "-15"
+    shadow_offset_y: 15
+    shadow_radius: 4
+    spacing: 20
+    type: horizontal
   mark_text: ""
   preedit_type: composition
-  vertical_auto_reverse: false
-  vertical_text: false
-  vertical_text_left_to_right: false
+  vertical_auto_reverse: true
+  vertical_text: true
+  vertical_text_left_to_right: true
   vertical_text_with_wrap: false
 switches:
   - name: ascii_mode

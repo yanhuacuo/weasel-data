@@ -1,11 +1,42 @@
 patch:
-  "style/font_face": "98WB-0"
+  "style/font_point": 14
+  "style/label_font_point": 14
+  "style/antialias_mode": cleartype
+  "style/layout/border": 2
+  "style/ascii_tip_follow_cursor": true
+  "style/layout/shadow_radius": 8
+  "style/display_tray_icon": true
+  "style/vertical_text_with_wrap": true
+  "style/layout/round_corner": 6
+  "style/layout/align_type": center
+  "style/color_scheme": "98wb-pink"
+  "style/vertical_text": true
+  "style/mark_text": ""
+  "style/layout/border_width": 3
+  "schema/icon": "icons/wubi.ico" 
+  "style/layout/min_width": 160
+  "style/layout/max_width": 2800
+  "style/layout/margin_y": 12
   "style/horizontal": true
-  "style/fullscreen": false
+  "style/layout/hilite_spacing": 20
+  "style/layout/spacing": 20
+  "schema/ascii_icon": "icons/en.ico" 
+  "style/layout/candidate_spacing": 20
+  "style/vertical_auto_reverse": false
+  "style/layout/min_height": 0
   "style/inline_preedit": true
   "style/preedit_type": composition
-  "style/mark_text": ""
-  "style/vertical_auto_reverse": false
-  "style/vertical_text": false
-  "style/vertical_text_left_to_right": false
-  "style/vertical_text_with_wrap": false
+  "style/layout/margin_x": 12
+  "style/fullscreen": false
+  "style/comment_font_point": 14
+  "style/layout/shadow_offset_y": 15
+  "style/label_font_face": "98WB-0"
+  "style/layout/hilite_padding": 5
+  "style/comment_font_face": "98WB-0" 
+  "style/layout/type": horizontal
+  "style/layout/shadow_offset_x": -15
+  "style/layout/max_height": 2800
+  "style/font_face": "98WB-0"
+  "style/label_format": "%s."
+  "style/vertical_text_left_to_right": true
+  "style/layout/corner_radius": 14
