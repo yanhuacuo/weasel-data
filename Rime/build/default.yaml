@@ -1,8 +1,8 @@
 __build_info:
   rime_version: 1.8.5
   timestamps:
-    default: 1679832952
-    default.custom: 1685927446
+    default: 1687910984
+    default.custom: 1687910982
     key_bindings: 1606040274
     key_bindings.custom: 1679033566
     punctuation: 1606040274
@@ -127,6 +127,7 @@ recognizer:
 schema_list:
   - schema: wubi98_ci
   - schema: wubi98_dz
+  - schema: wubi98_U
 switcher:
   abbreviate_options: true
   caption: "〔方案選單〕"

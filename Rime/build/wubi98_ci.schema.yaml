@@ -1,16 +1,16 @@
 __build_info:
   rime_version: 1.8.5
   timestamps:
-    default: 1679832952
-    default.custom: 1685927446
+    default: 1687910984
+    default.custom: 1687910982
     key_bindings: 1606040274
     key_bindings.custom: 1679033566
     punctuation: 1606040274
     punctuation.custom: 1679033566
     symbols: 1606040274
     symbols.custom: 1679033566
-    wubi98_ci.custom: 1687324105
-    wubi98_ci.schema: 1687319881
+    wubi98_ci.custom: 1687313626
+    wubi98_ci.schema: 1683861214
 ci_reverse_lookup:
   dictionary: wubi98_ci.extended
   tags:
@@ -475,7 +475,7 @@ speller:
 style:
   antialias_mode: cleartype
   ascii_tip_follow_cursor: true
-  color_scheme: songhe
+  color_scheme: "amber-2"
   comment_font_face: "98WB-0"
   comment_font_point: 14
   display_tray_icon: true
@@ -504,15 +504,15 @@ style:
     round_corner: 6
     shadow_offset_x: "-15"
     shadow_offset_y: 15
-    shadow_radius: 4
+    shadow_radius: 8
     spacing: 20
-    type: horizontal
+    type: vertical
   mark_text: ""
   preedit_type: composition
-  vertical_auto_reverse: true
+  vertical_auto_reverse: false
   vertical_text: true
   vertical_text_left_to_right: true
-  vertical_text_with_wrap: false
+  vertical_text_with_wrap: true
 switches:
   - name: ascii_mode
     reset: 0

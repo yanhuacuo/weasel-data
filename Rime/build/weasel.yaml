@@ -1,10 +1,10 @@
 __build_info:
   rime_version: 1.8.5
   timestamps:
-    hot_keys: 1687319881
+    hot_keys: 1679834216
     hot_keys.custom: 1679826956
     weasel: 1686732876
-    weasel.custom: 1687324105
+    weasel.custom: 1686280962
 app_options:
   QQ.exe:
     ascii_mode: true
@@ -1178,7 +1178,7 @@ preset_color_schemes:
 style:
   capture_by_click: false
   capture_type: none
-  color_scheme: songhe
+  color_scheme: "98wb-pink"
   comment_font_face: "98WB-0"
   comment_font_point: 14
   display_tray_icon: false

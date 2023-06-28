@@ -8,6 +8,7 @@ schema_list:
   - schema: wubi98_dz
   - schema: wubi98_U
 
+
 switcher:
   caption: 〔方案選單〕
   hotkeys:

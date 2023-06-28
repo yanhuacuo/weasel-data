@@ -1,8 +1,8 @@
 __build_info:
   rime_version: 1.8.5
   timestamps:
-    default: 1679832952
-    default.custom: 1685927446
+    default: 1687910984
+    default.custom: 1687910982
     key_bindings: 1606040274
     key_bindings.custom: 1679033566
     punctuation: 1606040274
@@ -10,9 +10,9 @@ __build_info:
     symbols: 1606040274
     symbols.custom: 1679033566
     wubi98_dz.custom: 1687313818
-    wubi98_dz.schema: 1683861244
+    wubi98_dz.schema: 1687577562
 ci_reverse_lookup:
-  dictionary: wubi98_dz
+  dictionary: wubi98_dz.extended
   tags:
     - rvlk2
   tips: "〔五笔滤镜〕"
@@ -56,7 +56,7 @@ engine:
     - "lua_translator@time_date"
 fixed:
   db_class: tabledb
-  dictionary: wubi98_dz
+  dictionary: wubi98_dz.extended
   disable_user_dict_for_patterns:
     - "^z.*$"
   enable_charset_filter: false
@@ -97,7 +97,7 @@ menu:
   page_size: 5
 mkst:
   db_class: tabledb
-  dictionary: wubi98_dz
+  dictionary: wubi98_dz.extended
   disable_user_dict_for_patterns:
     - "^z.*$"
   enable_charset_filter: false
@@ -415,7 +415,7 @@ reverse_lookup:
   tips: "〔拼音反查〕"
 rvl_zhuyin:
   db_class: tabledb
-  dictionary: wubi98_dz
+  dictionary: wubi98_dz.extended
   disable_user_dict_for_patterns:
     - "^z.*$"
   enable_charset_filter: false
@@ -543,7 +543,7 @@ switches:
     states: ["半", "全"]
 translator:
   db_class: tabledb
-  dictionary: wubi98_dz
+  dictionary: wubi98_dz.extended
   disable_user_dict_for_patterns:
     - "^z.*$"
   enable_charset_filter: false
