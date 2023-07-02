@@ -1,0 +1,20 @@
+# Rime table
+#@/db_name	wubi98_ci
+#@/db_type	tabledb
+#@/rime_version	1.8.5
+#@/tick	42
+寺	ff	4
+圭	fff	11
+土	ffff	7
+一	g	3
+顿	gbnm	2
+㻕	gnbm	2
+卡	hhu	1
+点	hko	1
+些	hxf	1
+之	p	2
+要	s	2
+森	sss	1
+前	ue	2
+辔	xlxk	1
+比	xx	2

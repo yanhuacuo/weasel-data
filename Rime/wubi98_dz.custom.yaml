@@ -40,3 +40,7 @@ patch:
   "style/label_format": "%s."
   "style/vertical_text_left_to_right": true
   "style/layout/corner_radius": 14
+  "schema/half_icon": "icons/half.ico" 
+  "schema/full_icon": "icons/full.ico" 
+  "style/layout/hilite_padding_x": 5
+  "style/layout/hilite_padding_y": 5

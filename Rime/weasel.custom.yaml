@@ -6,4 +6,4 @@ customization:
   rime_version: 1.8.5
 patch:
   __include: "hot_keys:/patch"
-  "style/color_scheme": 98wb-pink
+  "style/color_scheme": amber-2
