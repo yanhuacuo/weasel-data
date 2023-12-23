@@ -1,15 +1,15 @@
 __build_info:
-  rime_version: 1.8.5
+  rime_version: 1.9.0
   timestamps:
-    default: 1687910984
-    default.custom: 1688228304
+    default: 1700885732
+    default.custom: 1703318142
     key_bindings: 1606040274
     key_bindings.custom: 1679033566
     punctuation: 1606040274
     punctuation.custom: 1679033566
-    symbols: 1606040274
+    symbols: 1692331904
     symbols.custom: 1679033566
-    wubi98_dz.custom: 1688227998
+    wubi98_dz.custom: 1702851864
     wubi98_dz.schema: 1687577562
 ci_reverse_lookup:
   dictionary: wubi98_dz.extended
@@ -150,7 +150,7 @@ punctuator:
     "!": {commit: "！"}
     "\"": {pair: ["“", "”"]}
     "#": ["#", "№"]
-    "$": ["￥", "$", "€", "£", "¥", "¢", "¤", "₩"]
+    "$": {commit: "$"}
     "%": ["%", "％", "°", "℃", "‰", "‱", "℉"]
     "&": "&"
     "'": {pair: ["‘", "’"]}
@@ -475,12 +475,12 @@ speller:
   delimiter: "`"
   max_code_length: 4
 style:
-  antialias_mode: cleartype
+  antialias_mode: default
   ascii_tip_follow_cursor: true
-  color_scheme: "98wb-pink"
+  color_scheme: "amber-5"
   comment_font_face: "98WB-0"
   comment_font_point: 14
-  display_tray_icon: true
+  display_tray_icon: false
   font_face: "98WB-0"
   font_point: 14
   fullscreen: false
@@ -493,30 +493,32 @@ style:
     align_type: center
     border: 2
     border_width: 3
-    candidate_spacing: 20
-    corner_radius: 14
+    candidate_spacing: 15
+    corner_radius: 16
     hilite_padding: 5
     hilite_padding_x: 5
     hilite_padding_y: 5
-    hilite_spacing: 20
-    margin_x: 12
-    margin_y: 12
+    hilite_spacing: 10
+    margin_x: 10
+    margin_y: 10
     max_height: 2800
     max_width: 2800
     min_height: 0
-    min_width: 160
-    round_corner: 6
-    shadow_offset_x: "-15"
-    shadow_offset_y: 15
-    shadow_radius: 8
-    spacing: 20
-    type: horizontal
-  mark_text: ""
+    min_width: 80
+    round_corner: 16
+    shadow_offset_x: "-6"
+    shadow_offset_y: 6
+    shadow_radius: 6
+    spacing: 10
+    type: vertical
+  mark_text: " "
+  mouse_hover_ms: 0
+  paging_on_scroll: false
   preedit_type: composition
   vertical_auto_reverse: false
   vertical_text: true
   vertical_text_left_to_right: true
-  vertical_text_with_wrap: true
+  vertical_text_with_wrap: false
 switches:
   - name: ascii_mode
     reset: 0

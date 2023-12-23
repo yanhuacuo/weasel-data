@@ -1,0 +1,39 @@
+# Rime table
+#@/db_name	wubi98_dz
+#@/db_type	tabledb
+#@/rime_version	1.8.5
+#@/tick	41
+观	cm	1
+在	d	1
+期	dwe	1
+有	e	2
+用	et	1
+戴	falw	2
+趣	fhb	1
+者	ftj	1
+五	gg	1
+点	hko	1
+些	hxf	1
+是	j	2
+吗	kcg	1
+那	ng	1
+数	ov	1
+这	p	2
+割	pdhj	1
+定	pgh	1
+实	pu	2
+金	q	2
+的	r	2
+么	tc	1
+德	tfl	1
+制	tgm	1
+复	tjt	1
+种	tkh	1
+六	uy	1
+好	vb	1
+什	wf	1
+个	wh	1
+作	wthf	1
+分	wv	1
+讲	yfj	1
+义	yr	1

@@ -1,10 +1,10 @@
 __build_info:
-  rime_version: 1.8.5
+  rime_version: 1.9.0
   timestamps:
-    hot_keys: 1688265967
+    hot_keys: 1703230812
     hot_keys.custom: 1679826956
-    weasel: 1686732876
-    weasel.custom: 1688265952
+    weasel: 1691591744
+    weasel.custom: 1703230826
 app_options:
   QQ.exe:
     ascii_mode: true
@@ -20,7 +20,7 @@ app_options:
     ascii_mode: true
   test3.exe:
     ascii_mode: true
-config_version: 0.22
+config_version: 0.23
 preset_color_schemes:
   "98wb-pink":
     author: "五笔小筑 <wubixiaozhu@126.com>"
@@ -126,6 +126,122 @@ preset_color_schemes:
     name: "琥珀-新绿／Amber-green"
     shadow_color: 0xab2EFF58
     text_color: 0xffffff
+  "amber-3":
+    author: "五笔小筑 <wubixiaozhu@126.com>"
+    back_color: 0x00FFFFFF
+    border_color: 0x00444444
+    candidate_back_color: 0xC552D457
+    candidate_shadow_color: 0xF0A1F0ED
+    candidate_text_color: 0xffffff
+    comment_text_color: 0xffffff
+    hilited_back_color: 0x27BA53
+    hilited_candidate_back_color: 0xC552D457
+    hilited_candidate_border_color: 0xC552D457
+    hilited_candidate_shadow_color: 0xF0A1F0ED
+    hilited_candidate_text_color: 0xffffff
+    hilited_label_color: 0xffffff
+    hilited_mark_color: 0xDE33C1
+    hilited_shadow_color: 0xab2EFF58
+    hilited_text_color: 0x82e6ca
+    label_color: 0xffffff
+    name: "琥珀-荧光水绿／Amber-light-green"
+    shadow_color: 0xB329E63C
+    text_color: 0xffffff
+  "amber-4":
+    author: "五笔小筑 <wubixiaozhu@126.com>"
+    back_color: 0x00FFFFFF
+    border_color: 0x00444444
+    candidate_back_color: 0xF348C1CA
+    candidate_shadow_color: 0xF37F1FDE
+    candidate_text_color: 0xffffff
+    comment_text_color: 0xffffff
+    hilited_back_color: 0x27BA53
+    hilited_candidate_back_color: 0xF348C1CA
+    hilited_candidate_border_color: 0xF348C1CA
+    hilited_candidate_shadow_color: 0xF37F1FDE
+    hilited_candidate_text_color: 0xffffff
+    hilited_label_color: 0xffffff
+    hilited_mark_color: 0xDE33C1
+    hilited_shadow_color: 0xab2EFF58
+    hilited_text_color: 0x82e6ca
+    label_color: 0xffffff
+    name: "琥珀-荧光深红／Amber-dark-red"
+    shadow_color: 0xEB60DCDC
+    text_color: 0xffffff
+  "amber-5":
+    author: "五笔小筑 <wubixiaozhu@126.com>"
+    back_color: 0x00FFFFFF
+    border_color: 0x00444444
+    candidate_back_color: 0xE6718D30
+    candidate_shadow_color: 0xF599E99E
+    candidate_text_color: 0xffffff
+    comment_text_color: 0xffffff
+    hilited_back_color: 0x27BA53
+    hilited_candidate_back_color: 0xE6718D30
+    hilited_candidate_border_color: 0xE6718D30
+    hilited_candidate_shadow_color: 0xF599E99E
+    hilited_candidate_text_color: 0xffffff
+    hilited_label_color: 0xffffff
+    hilited_mark_color: 0xDE33C1
+    hilited_shadow_color: 0xab2EFF58
+    hilited_text_color: 0x82e6ca
+    label_color: 0xffffff
+    name: "琥珀-荧光叶绿／Amber-green-leaf"
+    shadow_color: 0xEB60DCDC
+    text_color: 0xffffff
+  "amber-6":
+    author: "五笔小筑 <wubixiaozhu@126.com>"
+    back_color: 0xFC36ABDD
+    border_color: 0x00444444
+    candidate_back_color: 0xFC36ABDD
+    candidate_shadow_color: 0x00000000
+    candidate_text_color: 0xffffff
+    comment_text_color: 0xffffff
+    hilited_back_color: 0x27BA53
+    hilited_candidate_back_color: 0xEA23BE95
+    hilited_candidate_border_color: 0xEA23BE95
+    hilited_candidate_shadow_color: 0xD3153BFE
+    hilited_candidate_text_color: 0xffffff
+    hilited_label_color: 0xffffff
+    hilited_mark_color: 0xDE33C1
+    hilited_shadow_color: 0xEA0DD0D5
+    hilited_text_color: 0x82e6ca
+    label_color: 0xffffff
+    name: "琥珀-柔光／Amber-Soft-light"
+    shadow_color: 0xEA0DD0D5
+    text_color: 0xffffff
+  "amber-7":
+    author: "五笔小筑 <wubixiaozhu@126.com>"
+    back_color: 0xffffff
+    border_color: 0xE99321
+    candidate_text_color: 0xE99321
+    comment_text_color: 0xE99321
+    hilited_back_color: 0xffffff
+    hilited_candidate_back_color: 0xECF1FC
+    hilited_candidate_border_color: 0xCFDCFD
+    hilited_candidate_text_color: 0x2021FF
+    hilited_label_color: 0x2021FF
+    hilited_text_color: 0x2238dc
+    label_color: 0xE99321
+    name: "琥珀-清新／Amber-Soft-blue"
+    text_color: 0xE99321
+  "amber-8":
+    author: "佛振 <chen.sst@gmail.com>"
+    back_color: 0x00ffffff
+    border_color: 0x00000000
+    candidate_back_color: 0xE4E4E4
+    candidate_shadow_color: 0xab000000
+    hilited_back_color: 0xE4E4E4
+    hilited_candidate_back_color: 0x000000
+    hilited_candidate_shadow_color: 0xab000000
+    hilited_candidate_text_color: 0xE4E4E4
+    hilited_label_color: 0xE4E4E4
+    hilited_shadow_color: 0xab000000
+    hilited_text_color: 0x000000
+    label_color: 0x000000
+    name: "墨池（透明）／trans_Ink"
+    shadow_color: 0x00000000
+    text_color: 0x000000
   android:
     author: "Patricivs <ipatrickmac@me.com>"
     back_color: 0x99731c
@@ -1176,27 +1292,29 @@ preset_color_schemes:
     shadow_color: 0x6b000000
     text_color: 0x573130
 style:
-  capture_by_click: false
-  capture_type: none
-  color_scheme: "amber-2"
+  antialias_mode: cleartype
+  ascii_tip_follow_cursor: true
+  color_scheme: amber
   comment_font_face: "98WB-0"
-  comment_font_point: 14
+  comment_font_point: 18
   display_tray_icon: false
   font_face: "98WB-0"
-  font_point: 14
+  font_point: 18
   fullscreen: false
-  horizontal: false
+  horizontal: true
   inline_preedit: true
   label_font_face: "98WB-0"
-  label_font_point: 14
+  label_font_point: 18
   label_format: "%s."
   layout:
     align_type: center
     border: 2
     border_width: 3
     candidate_spacing: 20
-    corner_radius: 14
+    corner_radius: 16
     hilite_padding: 5
+    hilite_padding_x: 5
+    hilite_padding_y: 5
     hilite_spacing: 20
     margin_x: 12
     margin_y: 12
@@ -1204,14 +1322,16 @@ style:
     max_width: 2800
     min_height: 0
     min_width: 160
-    round_corner: 6
-    shadow_offset_x: "-15"
-    shadow_offset_y: 15
-    shadow_radius: 8
+    round_corner: 10
+    shadow_offset_x: "-14"
+    shadow_offset_y: 14
+    shadow_radius: 6
     spacing: 20
-  mark_text: ""
+    type: vertical
+  mark_text: " "
+  mouse_hover_ms: 0
   preedit_type: composition
   vertical_auto_reverse: false
-  vertical_text: false
-  vertical_text_left_to_right: false
-  vertical_text_with_wrap: false
+  vertical_text: true
+  vertical_text_left_to_right: true
+  vertical_text_with_wrap: true
