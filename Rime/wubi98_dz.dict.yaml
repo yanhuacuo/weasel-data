@@ -1,9 +1,10 @@
 # Rime dictionary
 # encoding: utf-8
-# 2021-11-25
+# 2023-11-26
+# key-word 潀-ilww
 ---
 name: wubi98_dz
-version: "2.0"
+version: "3.0"
 sort: by_weight
 columns:
   - text
@@ -8560,11 +8561,10 @@ encoder:
 琄	gke	355814	gkeg
 琄	gkeg	355813	gkeg
 吾	gkf	355812	gkf
-丗	gkg	355811	gkgd
-丗	gkgd	355810	gkgd
+丗	gmk	355811	gmk
 㻍	gkgd	355809	gkgd
 珵	gkgg	355808	gkgg
-帯	gkgh	355807	gkgh
+帯	gmph	355807	gmph
 囊	gkh	355806	gkhe
 玔	gkh	355805	gkh
 叓	gkhc	355804	gkhc
@@ -11236,7 +11236,7 @@ encoder:
 㴄	ilwm	353138	ilwm
 溭	ilwt	353137	ilwt
 泅	ilwy	353136	ilwy
-潀	ilwy	353135	ilwy
+潀	ilww	353135	ilww
 漯	ilx	353134	ilxi
 漯	ilxi	353133	ilxi
 油	im	353132	img
@@ -18588,7 +18588,7 @@ encoder:
 尼	nxv	345786	nxv
 屁	nxx	345785	nxxv
 悂	nxxf	345784	nxxf
-蠿	nxxj	345783	nxxj
+蠿	xxgj	345783	xxgj
 屁	nxxv	345782	nxxv
 惤	nxy	345781	nxyx
 惤	nxyx	345780	nxyx
@@ -18992,7 +18992,7 @@ encoder:
 廌	ogn	345382	ogno
 廌	ogno	345381	ogno
 廒	ogq	345380	ogqt
-煭	ogqo	345379	ogqo
+煭	vgqo	345379	vgqo
 廒	ogqt	345378	ogqt
 粖	ogs	345377	ogsy
 粖	ogsy	345376	ogsy

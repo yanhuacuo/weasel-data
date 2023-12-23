@@ -1,9 +1,10 @@
 # Rime dictionary
 # encoding: utf-8
-# 2021-11-25
+# 2023-11-26
+# key-word 潀-ilww
 ---
 name: wubi98_ci
-version: "2.0"
+version: "3.0"
 sort: by_weight
 columns:
   - text
@@ -28686,13 +28687,12 @@ encoder:
 噩耗	gkfs	1097188	
 融雪	gkfv	1097187	
 顿口无言	gkfy	1097186	
-丗	gkg	1097185	gkgd
+丗	gmk	1097185	gmk
 带到	gkgc	1097184	
-丗	gkgd	1097183	gkgd
 㻍	gkgd	1097182	gkgd
 带球	gkgg	1097181	
 珵	gkgg	1097180	gkgg
-帯	gkgh	1097179	gkgh
+帯	gmph	1097179	gmph
 事理	gkgj	1097178	
 副理	gkgj	1097177	
 逗逼	gkgk	1097176	
@@ -36938,7 +36938,7 @@ encoder:
 溭	ilwt	1088936	ilwt
 法国人	ilww	1088935	
 泅	ilwy	1088934	ilwy
-潀	ilwy	1088933	ilwy
+潀	ilww	1088933	ilww
 漯	ilx	1088932	ilxi
 漯	ilxi	1088931	ilxi
 深思熟虑	ilyh	1088930	
@@ -57399,7 +57399,7 @@ encoder:
 情绪化	nxwx	1068475	
 屁	nxx	1068474	nxxv
 悂	nxxf	1068473	nxxf
-蠿	nxxj	1068472	nxxj
+蠿	xxgj	1068472	xxgj
 屁	nxxv	1068471	nxxv
 惯纵	nxxw	1068470	
 惤	nxy	1068469	nxyx
@@ -58523,7 +58523,6 @@ encoder:
 火烈鸟	ogqg	1067351	
 精钢	ogqm	1067350	
 精馏	ogqn	1067349	
-煭	ogqo	1067348	ogqo
 精金	ogqq	1067347	
 廒	ogqt	1067346	ogqt
 精铁	ogqt	1067345	
@@ -95793,6 +95792,7 @@ encoder:
 嫣然	vgqd	1030081	
 建外	vgqh	1030080	
 好事多磨	vgqo	1030079	
+煭	vgqo	1030078	vgqo
 㜜	vgqt	1030078	vgqt
 九天揽月	vgre	1030077	
 妺	vgs	1030076	vgsy
