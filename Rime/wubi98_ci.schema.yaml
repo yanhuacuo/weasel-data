@@ -76,7 +76,7 @@ engine:
     - "lua_translator@helper"
     - "lua_translator@time_date"
 speller:
-  auto_select: true
+  auto_select: false
   auto_clear: max_length
   delimiter: "`"
   max_code_length: 4
@@ -208,6 +208,8 @@ history:
   initial_quality: 1
 key_binder:
   bindings:
+    - {send: Page_Up, accept: apostrophe, when: has_menu}
+    - {send: Page_Down, accept: semicolon, when: has_menu}
     - {send: Up, accept: Left, when: has_menu}
     - {send: Down, accept: Right, when: has_menu}
     - {send: Page_Up, accept: minus, when: has_menu}
@@ -223,8 +225,6 @@ key_binder:
     - {toggle: GB2312, accept: "Control+Shift+U", when: always}
     - {accept: Return, send: Escape, when: composing}
     - {accept: Return, send: Escape, when: has_menu}
-    - {accept: semicolon, send: 2, when: has_menu}
-    - {accept: apostrophe, send: 3, when: has_menu}
 punctuator:
   import_preset: symbols
 menu:
