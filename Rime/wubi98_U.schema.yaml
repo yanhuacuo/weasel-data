@@ -1,7 +1,7 @@
 schema:
   schema_id: wubi98_U
   name: "超集"
-  version: "6.0"
+  version: "6.1"
   author:
     - 發明人 王永民
   description: |
@@ -39,11 +39,11 @@ switches:
     states: [ 半,全 ]
 engine:
   filters:
-    - charset_filter@gb2312
     - simplifier
     - "reverse_lookup_filter@ci_reverse_lookup"
     - lua_filter@new_spelling@spelling
     - lua_filter@single_char
+    - lua_filter@*multiline*Multiline_filter
     - uniquifier
   processors:
     - ascii_composer

@@ -9,15 +9,15 @@ style:
   ascii_tip_follow_cursor: true
   color_scheme: "amber-7"
   comment_font_face: "98WB-0"
-  comment_font_point: 18
+  comment_font_point: 14
   display_tray_icon: false
   font_face: "98WB-0"
-  font_point: 18
+  font_point: 14
   fullscreen: false
   horizontal: true
   inline_preedit: true
   label_font_face: "98WB-0"
-  label_font_point: 18
+  label_font_point: 14
   label_format: "%s."
   mouse_hover_ms: 0
   layout:
