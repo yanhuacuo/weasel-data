@@ -2,28 +2,28 @@
 #@/db_name	wubi98_U
 #@/db_type	tabledb
 #@/rime_version	1.9.0
-#@/tick	49
-项	adm	2
-取	bc	2
-以	c	2
-双	cc	2
-去	fcu	3
-超	fhv	2
-正	ghd	1
-两	gmww	2
-列	gqj	2
-𫵌	ipka	1
-𫵌	ipkf	2
-量	jg	2
-𱔾	khtf	5
-字	pb	3
-整	skt	2
-年	tg	1
-重	tgj	4
-复	tjt	3
-合	wgkf	2
-个	wh	1
-偼	whv	1
+#@/tick	32
+𫈶	agme	1
+䓈	atwc	1
+除	bwg	1
+大	dd	1
+地	f	1
+二	fgg	3
+更	gjr	2
+海	itx	1
+日	j	1
+田	llll	1
+网	mrr	1
+书	nnh	1
+㇆	nnll	1
+字	pb	1
+审	pj	3
+夕	qtny	1
+校	sur	3
+第	txh	3
+次	uq	3
+新	usr	1
+全	wg	1
 集	wys	1
-纠	xnh	1
-计	yf	2
+𩫌	ymkk	1
+譶	yyyf	1
