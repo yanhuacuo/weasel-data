@@ -216,7 +216,8 @@ local function GettotalDay(Date,dayCount)
 			else days={31,28,31,30,31,30,31,31,30,31,30,31} end
 			if i>11 then t=i-12 else t=i end
 			--print("<" ..i ..">" ..days[t+1] .. "-".. t+1)
-			if (total>days[t+1]) then
+			if t<=0 then t = t+1 end --新增判断
+			if (total>days[t]) then --从t+1改成t
 				total=total-days[Month]
 				Month=Month+1
 				if Month>12 then Month=Month-12 Year=Year+1 end
