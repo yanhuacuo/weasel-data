@@ -1,53 +1,54 @@
-# Weasel settings
-# encoding: utf-8
-# Some color schemes come from fxliang
-# https://github.com/fxliang/weasel_config
 config_version: "0.23"
-
 style:
-  antialias_mode: cleartype
-  ascii_tip_follow_cursor: true
-  color_scheme: "amber-7"
-  comment_font_face: "98WB-0"
   comment_font_point: 14
+  inline_preedit: false
   display_tray_icon: false
-  font_face: "98WB-0"
-  font_point: 14
-  fullscreen: false
-  horizontal: true
-  inline_preedit: true
+  mark_text: ""
+  vertical_text_left_to_right: true
   label_font_face: "98WB-0"
   label_font_point: 14
+  font_face: "98WB-0"
+  ascii_tip_follow_cursor: true
+  horizontal: true
+  antialias_mode: default
+  vertical_text: true
+  fullscreen: false
+  preedit_type: composition
+  vertical_text_with_wrap: false
+  vertical_auto_reverse: false
   label_format: "%s."
+  color_scheme: "amber-8"
+  comment_font_face: "98WB-0"
+  font_point: 14
   mouse_hover_ms: 0
+  paging_on_scroll: false
+  color_scheme_dark: "ink"
+  candidate_abbreviate_length: 0
+  click_to_capture: false
+  enhanced_position: true
+  hover_type: none
   layout:
-    align_type: center
+    margin_y: 12
+    shadow_offset_x: "-8"
+    shadow_offset_y: 8
     border: 2
-    border_width: 3
-    candidate_spacing: 20
-    corner_radius: 16
     hilite_padding: 5
+    min_height: 0
+    hilite_spacing: 10
+    spacing: 18
+    corner_radius: 8
+    shadow_radius: 8
+    round_corner: 8
+    candidate_spacing: 15
+    min_width: 80
+    max_width: 2800
+    border_width: 1
+    margin_x: 12
+    type: vertical
+    max_height: 2800
+    align_type: center
     hilite_padding_x: 5
     hilite_padding_y: 5
-    hilite_spacing: 20
-    margin_x: 12
-    margin_y: 12
-    max_height: 2800
-    max_width: 2800
-    min_height: 0
-    min_width: 160
-    round_corner: 10
-    shadow_offset_x: "-14"
-    shadow_offset_y: 14
-    shadow_radius: 6
-    spacing: 20
-    type: vertical
-  mark_text: " "
-  preedit_type: composition
-  vertical_auto_reverse: false
-  vertical_text: true
-  vertical_text_left_to_right: true
-  vertical_text_with_wrap: true
   
 preset_color_schemes:
 
@@ -143,6 +144,30 @@ preset_color_schemes:
     comment_text_color: 0xe8f3f6 #非高亮opencc注解颜色-by98WB
     hilited_comment_text_color: 0x000000 #高亮opencc注解颜色-by98WB
 
+  Tales:
+    name: 童话／Tales
+    author: 五笔小筑 <wubixiaozhu@126.com>
+    back_color: 0xff3e85e4
+    shadow_color: 0xff4fe7ff
+    border_color: 0xff3e85e4
+    text_color: 0xff000000
+    hilited_text_color: 0xff000000
+    hilited_back_color: 0xffdddddd
+    hilited_shadow_color: 0x00000000
+    hilited_mark_color: 0x00000000
+    hilited_label_color: 0xfffbfaff
+    hilited_candidate_text_color: 0xffffffff
+    hilited_comment_text_color: 0xfffbfaff
+    hilited_candidate_back_color: 0xff10876b
+    hilited_candidate_border_color: 0xff179168
+    hilited_candidate_shadow_color: 0xde1381f0
+    label_color: 0xff000000
+    candidate_text_color: 0xff000000
+    comment_text_color: 0xff000000
+    candidate_back_color: 0x00000000
+    candidate_border_color: 0x00000000
+    candidate_shadow_color: 0x00000000
+    
   amber-11:
     name: 简洁白 / Simple white11
     text_color:                       0x777777
@@ -357,7 +382,7 @@ preset_color_schemes:
     hilited_back_color: 0x222222 #编码背景颜色
     hilited_candidate_text_color: 0x000000 #高亮候选文字颜色
     hilited_candidate_back_color: 0x31B7CC #高亮候选背景颜色
-    shadow_color: 0x00000000 #候选窗阴影色，默认全透明（无阴影）
+    shadow_color: 0x003B68FF #候选窗阴影色，默认全透明（无阴影）
     label_color: 0x000000 #非高亮候选序数值颜色-by98WB
     hilited_label_color: 0x000000 #高亮候选的序数值颜色-by98WB
     comment_text_color: 0x2A6E0D #非高亮opencc注解颜色-by98WB
